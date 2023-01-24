@@ -8,7 +8,7 @@ from typing import List, Optional, Tuple
 
 import requests
 
-API_KEY: Optional[str] = "e5ac1ec44f3d4b86a10273000d526ccf"
+API_KEY: Optional[str] = None
 URL_BASE: str = "https://pomiary.gdanskiewody.pl/rest/measurements"
 STATION_NUMBER: str = "13"
 MEASUREMENTS: List[str] = [
