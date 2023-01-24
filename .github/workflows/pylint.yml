@@ -22,14 +22,3 @@ jobs:
       run: |
         pylint $(git ls-files '*.py')
 
-workflows:
-  default:
-    jobs:
-      - approve_publish:
-          type: approval
-          requires:
-            - lint
-          filters:
-            branches:
-              only:
-                - main
