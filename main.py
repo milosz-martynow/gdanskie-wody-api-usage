@@ -57,7 +57,7 @@ def get_meteorological_data(api_key: str, url: str) -> dict:
         return requests.get(
             url, headers={"Authorization": "Bearer {}".format(api_key)}
         ).json()
-
+    # pylint: disable=bare-except
     except:
         return {}
 
